@@ -1,6 +1,68 @@
 html {
-  --color-grey-100: rgb(236, 236, 236);
+  --color-grey-100: rgb(230, 225, 225);
   --color-grey-400: rgb(134, 134, 134);
   --color-grey-600: rgb(58, 58, 58);
   --color-grey-900: rgb(41, 41, 41);
+
+  --color-blue-100: rgb(200, 233, 255);
+  --color-blue-400: rgb(75, 178, 247);
+  --color-blue-600: rgb(24, 158, 248);
+
+  background-color: whitesmoke;
+}
+
+main {
+  width: 900px;
+  height: 1200px;
+  margin: 0 auto 0 auto;
+  background: linear-gradient(30deg, rgb(226, 226, 226), var(--color-grey-100));
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+#main-header {
+  width: 900px;
+  padding: 1rem 0;
+  margin: 0 auto 0 auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  align-items: center;
+  background-color: var(--color-blue-100);
+  display: flex;
+  justify-content: space-between;
+}
+
+#main-header a {
+  font-family: 'Red Hat Display', serif;
+  color: var(--color-grey-600);
+  padding: 0 2rem;
+  text-decoration: none;
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px grey;
+  text-align: center;
+}
+
+
+#main-header ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+#main-header li {
+  font-family: 'Raleway';
+  font-size: 1.25rem;
+  color: var(--color-grey-900);
+  padding: 0 2rem 0 0;
+}
+
+@media (max-width: 48rem) {
+  #main-header nav {
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
 }
