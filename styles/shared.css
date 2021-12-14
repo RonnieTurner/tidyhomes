@@ -8,6 +8,8 @@ html {
   --color-blue-400: rgb(75, 178, 247);
   --color-blue-600: rgb(24, 158, 248);
 
+  --color-newblue-300: rgb(167, 226, 255);
+
   background-color: whitesmoke;
 }
 
@@ -55,6 +57,11 @@ main {
   font-size: 1.25rem;
   color: var(--color-grey-900);
   padding: 0 2rem 0 0;
+  transition: transform .25s ease-out 0s;
+}
+
+#main-header li:hover {
+  transform: scale(1.25);
 }
 
 @media (max-width: 48rem) {
